@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		FABA0AB01F8E78F200A41A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA0AAF1F8E78F200A41A20 /* AppDelegate.swift */; };
-		FABA0AB21F8E78F200A41A20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA0AB11F8E78F200A41A20 /* ViewController.swift */; };
 		FABA0AB51F8E78F200A41A20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABA0AB31F8E78F200A41A20 /* Main.storyboard */; };
 		FABA0AB71F8E78F200A41A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABA0AB61F8E78F200A41A20 /* Assets.xcassets */; };
 		FABA0ABA1F8E78F200A41A20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABA0AB81F8E78F200A41A20 /* LaunchScreen.storyboard */; };
 		FABA0AC51F8E78F300A41A20 /* CricHQCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA0AC41F8E78F300A41A20 /* CricHQCodingChallengeTests.swift */; };
+		FABA0AD41F8E799600A41A20 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA0ACF1F8E799600A41A20 /* DetailViewController.swift */; };
+		FABA0AD51F8E799600A41A20 /* RSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA0AD01F8E799600A41A20 /* RSSParser.swift */; };
+		FABA0AD61F8E799600A41A20 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA0AD11F8E799600A41A20 /* TableViewCell.swift */; };
+		FABA0AD71F8E799600A41A20 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABA0AD21F8E799600A41A20 /* TableViewCell.xib */; };
+		FABA0AD81F8E799600A41A20 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA0AD31F8E799600A41A20 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +32,6 @@
 /* Begin PBXFileReference section */
 		FABA0AAC1F8E78F200A41A20 /* CricHQCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CricHQCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABA0AAF1F8E78F200A41A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FABA0AB11F8E78F200A41A20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FABA0AB41F8E78F200A41A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FABA0AB61F8E78F200A41A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FABA0AB91F8E78F200A41A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		FABA0AC01F8E78F300A41A20 /* CricHQCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CricHQCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABA0AC41F8E78F300A41A20 /* CricHQCodingChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricHQCodingChallengeTests.swift; sourceTree = "<group>"; };
 		FABA0AC61F8E78F300A41A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABA0ACF1F8E799600A41A20 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FABA0AD01F8E799600A41A20 /* RSSParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSParser.swift; sourceTree = "<group>"; };
+		FABA0AD11F8E799600A41A20 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FABA0AD21F8E799600A41A20 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		FABA0AD31F8E799600A41A20 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +85,12 @@
 		FABA0AAE1F8E78F200A41A20 /* CricHQCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				FABA0ACF1F8E799600A41A20 /* DetailViewController.swift */,
+				FABA0AD01F8E799600A41A20 /* RSSParser.swift */,
+				FABA0AD11F8E799600A41A20 /* TableViewCell.swift */,
+				FABA0AD21F8E799600A41A20 /* TableViewCell.xib */,
+				FABA0AD31F8E799600A41A20 /* TableViewController.swift */,
 				FABA0AAF1F8E78F200A41A20 /* AppDelegate.swift */,
-				FABA0AB11F8E78F200A41A20 /* ViewController.swift */,
 				FABA0AB31F8E78F200A41A20 /* Main.storyboard */,
 				FABA0AB61F8E78F200A41A20 /* Assets.xcassets */,
 				FABA0AB81F8E78F200A41A20 /* LaunchScreen.storyboard */,
@@ -180,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FABA0ABA1F8E78F200A41A20 /* LaunchScreen.storyboard in Resources */,
+				FABA0AD71F8E799600A41A20 /* TableViewCell.xib in Resources */,
 				FABA0AB71F8E78F200A41A20 /* Assets.xcassets in Resources */,
 				FABA0AB51F8E78F200A41A20 /* Main.storyboard in Resources */,
 			);
@@ -199,8 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FABA0AB21F8E78F200A41A20 /* ViewController.swift in Sources */,
+				FABA0AD61F8E799600A41A20 /* TableViewCell.swift in Sources */,
+				FABA0AD81F8E799600A41A20 /* TableViewController.swift in Sources */,
+				FABA0AD41F8E799600A41A20 /* DetailViewController.swift in Sources */,
 				FABA0AB01F8E78F200A41A20 /* AppDelegate.swift in Sources */,
+				FABA0AD51F8E799600A41A20 /* RSSParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
